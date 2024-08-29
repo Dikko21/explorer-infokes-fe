@@ -64,7 +64,7 @@ const ContextMenu = ({ children, selected, refresh }) => {
     }, [])
     return (
         <>
-            <div className='flex-1 p-2 select-none h-screen' onContextMenu={handleClick} id="context-menu">
+            <div className='flex-1 p-2 select-none h-screen overflow-y-auto pb-12' onContextMenu={handleClick} id="context-menu">
                 {children}
                 {active &&
                     <ul className='absolute bg-white border-slate-400 border-[1px] rounded-sm ' style={{ top: points.y, left: points.x }}>
